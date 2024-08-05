@@ -49,15 +49,15 @@ game:GetService("ReplicatedStorage"):WaitForChild("307D0912-4609-4190-B07C-73914
 end 
 
 local function colors()
-
+task.wait(0.1)
 spawn(func1) 
-task.wait(0.5)
+task.wait(0.1)
 spawn(func2)
-task.wait(0.5)
+task.wait(0.1)
 spawn(func3)
-task.wait(0.5)
+task.wait(0.1)
 spawn(func4)
-task.wait(0.5)
+task.wait(0.1)
 spawn(func5)
 
 end
