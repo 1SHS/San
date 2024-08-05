@@ -62,6 +62,6 @@ spawn(func5)
 
 end
 
-while true do
+while wait() do
 spawn(colors)
 end
