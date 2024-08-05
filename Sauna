@@ -1,0 +1,24 @@
+local pancake = {
+    [1] = "colo",
+    [2] = Color3.new(255, 0, 0)
+}
+
+local rizz= {
+    [1] = "colo",
+    [2] = Color3.new(0, 255, 0)
+}
+
+local function func1() 
+
+game:GetService("ReplicatedStorage"):WaitForChild("307D0912-4609-4190-B07C-739143B666D3"):FireServer(unpack(pancake))
+end 
+
+local function func2() 
+
+game:GetService("ReplicatedStorage"):WaitForChild("307D0912-4609-4190-B07C-739143B666D3"):FireServer(unpack(rizz))
+end 
+
+while true do
+spawn(func1) 
+spawn(func2)
+end
