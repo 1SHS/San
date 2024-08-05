@@ -1,0 +1,7 @@
+while wait() do
+local args = {
+    [1] = 3
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("8E966FA0-E6B9-4566-ADBA-DB9BC15D5C49"):FireServer(unpack(args))
+end
