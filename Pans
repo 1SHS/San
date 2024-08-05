@@ -1,0 +1,67 @@
+local pancake = {
+    [1] = "colo",
+    [2] = Color3.new(0, 0, 255)
+}
+
+local rizz= {
+    [1] = "colo",
+    [2] = Color3.new(0, 255, 0)
+}
+
+local red= {
+    [1] = "colo",
+    [2] = Color3.new(255, 0, 0)
+}
+
+local pink= {
+    [1] = "colo",
+    [2] = Color3.new(255, 0, 255)
+}
+
+local orange= {
+    [1] = "colo",
+    [2] = Color3.new(255, 85, 0)
+}
+
+local function func1() 
+
+game:GetService("ReplicatedStorage"):WaitForChild("307D0912-4609-4190-B07C-739143B666D3"):FireServer(unpack(pancake))
+end 
+
+local function func2() 
+
+game:GetService("ReplicatedStorage"):WaitForChild("307D0912-4609-4190-B07C-739143B666D3"):FireServer(unpack(rizz))
+end 
+
+local function func3() 
+
+game:GetService("ReplicatedStorage"):WaitForChild("307D0912-4609-4190-B07C-739143B666D3"):FireServer(unpack(red))
+end 
+
+local function func4() 
+
+game:GetService("ReplicatedStorage"):WaitForChild("307D0912-4609-4190-B07C-739143B666D3"):FireServer(unpack(pink))
+end 
+
+local function func5() 
+
+game:GetService("ReplicatedStorage"):WaitForChild("307D0912-4609-4190-B07C-739143B666D3"):FireServer(unpack(orange))
+end 
+
+local function colors()
+
+spawn(func1) 
+task.wait(0.5)
+spawn(func2)
+task.wait(0.5)
+spawn(func3)
+task.wait(0.5)
+spawn(func4)
+task.wait(0.5)
+spawn(func5)
+
+end
+
+while true do
+spawn(colors)
+end
